@@ -20,3 +20,10 @@ This repository contains my implementation of the
     * [ ] Tune hyperparameters with Keras Tuner
   * [ ] Load and preprocess data
 * [ ] Advanced
+  * [ ] Reinforcement Learning
+    * [x] ~~*Actor-Critic Method*~~ [[here](reinforcement-learning/actor-critic-method.py)]
+    * [ ] TF-Agents
+      * [x] ~~*REINFORCE*~~  [[here](tf-agents/reinforce.py)]
+      * [ ] Soft actor critic in Minitaur
+      * [ ] Categorical DQN
+      * [ ] Multi-armed bandits
