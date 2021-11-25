@@ -2,12 +2,8 @@
 https://www.tensorflow.org/agents/tutorials/6_reinforce_tutorial
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-
-import base64
-import imageio
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import numpy as np
 import PIL.Image
@@ -25,7 +21,7 @@ from tf_agents.policies import py_tf_eager_policy
 from tf_agents.replay_buffers import reverb_replay_buffer
 from tf_agents.replay_buffers import reverb_utils
 from tf_agents.specs import tensor_spec
-from tf_agents.trajectories import trajectory
+# from tf_agents.trajectories import trajectory
 from tf_agents.utils import common
 
 # Set up a virtual display for rendering OpenAI gym environments.
@@ -192,3 +188,4 @@ plt.plot(steps, returns)
 plt.ylabel('Average Return')
 plt.xlabel('Step')
 plt.ylim(top=250)
+plt.savefig("tf-agents/reinforce.png")
